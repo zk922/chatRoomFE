@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
-import {LoginComponent} from './pages/login/login';
 
 @Component({
   selector: 'app-root',
@@ -11,11 +10,17 @@ export class AppComponent implements OnInit{
 
   constructor(
     private router: Router
-  ){
-
-  }
+  ){}
 
   ngOnInit(){
-    console.log('ready')
+    if(window.localStorage){
+
+    }
+    else {
+
+    }
+
+
+
   }
 }

@@ -222,6 +222,13 @@
     semver "^5.3.0"
     semver-intersect "^1.1.2"
 
+"@types/bootstrap@^4.1.2":
+  version "4.1.2"
+  resolved "http://registry.npm.taobao.org/@types/bootstrap/download/@types/bootstrap-4.1.2.tgz#3d6a3ea111e88ca926803a0e02b1f3d4c9913a5b"
+  dependencies:
+    "@types/jquery" "*"
+    popper.js "^1.14.1"
+
 "@types/jasmine@*", "@types/jasmine@~2.8.6":
   version "2.8.8"
   resolved "http://registry.npm.taobao.org/@types/jasmine/download/@types/jasmine-2.8.8.tgz#bf53a7d193ea8b03867a38bfdb4fbb0e0bf066c9"
@@ -231,6 +238,10 @@
   resolved "http://registry.npm.taobao.org/@types/jasminewd2/download/@types/jasminewd2-2.0.3.tgz#0d2886b0cbdae4c0eeba55e30792f584bf040a95"
   dependencies:
     "@types/jasmine" "*"
+
+"@types/jquery@*", "@types/jquery@^3.3.5":
+  version "3.3.5"
+  resolved "http://registry.npm.taobao.org/@types/jquery/download/@types/jquery-3.3.5.tgz#75cfec8c5ee38355d14296ada7e7e2fb8bd3ac2f"
 
 "@types/node@^6.0.46":
   version "6.0.114"
@@ -889,6 +900,10 @@ boom@2.x.x:
   resolved "http://registry.npm.taobao.org/boom/download/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
   dependencies:
     hoek "2.x.x"
+
+bootstrap@^4.1.3:
+  version "4.1.3"
+  resolved "http://registry.npm.taobao.org/bootstrap/download/bootstrap-4.1.3.tgz#0eb371af2c8448e8c210411d0cb824a6409a12be"
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -3330,6 +3345,10 @@ jasminewd2@^2.1.0:
   version "2.2.0"
   resolved "http://registry.npm.taobao.org/jasminewd2/download/jasminewd2-2.2.0.tgz#e37cf0b17f199cce23bea71b2039395246b4ec4e"
 
+jquery@^3.3.1:
+  version "3.3.1"
+  resolved "http://registry.npm.taobao.org/jquery/download/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
+
 js-base64@^2.1.8:
   version "2.4.8"
   resolved "http://registry.npm.taobao.org/js-base64/download/js-base64-2.4.8.tgz#57a9b130888f956834aa40c5b165ba59c758f033"
@@ -4524,6 +4543,10 @@ pkg-dir@^2.0.0:
   resolved "http://registry.npm.taobao.org/pkg-dir/download/pkg-dir-2.0.0.tgz#f6d5d1109e19d63edf428e0bd57e12777615334b"
   dependencies:
     find-up "^2.1.0"
+
+popper.js@^1.14.1:
+  version "1.14.3"
+  resolved "http://registry.npm.taobao.org/popper.js/download/popper.js-1.14.3.tgz#1438f98d046acf7b4d78cd502bf418ac64d4f095"
 
 portfinder@^1.0.13, portfinder@^1.0.9:
   version "1.0.13"

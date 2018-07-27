@@ -3,9 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {RouterModule, Routes} from '@angular/router';
-// import {LoginModule} from './pages/login/login.module';
-// import {RoomModule} from './pages/room/room.module';
-// import {RoomComponent} from './pages/room/room';
+import {CommonModule} from '@angular/common';
 const router: Routes = [
   {
     path: 'login',
@@ -27,12 +25,14 @@ const router: Routes = [
     AppComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     RouterModule.forRoot(router)
     // LoginModule,
     // RoomModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

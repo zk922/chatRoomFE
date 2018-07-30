@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {Router} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
+import {UserInfoService} from './services/userinfo';
+import {RoomComponent} from './pages/room/room';
 
 @Component({
   selector: 'app-root',
@@ -9,18 +11,17 @@ import {Router} from '@angular/router';
 export class AppComponent implements OnInit{
 
   constructor(
-    private router: Router
+    private router: Router,
+    private userInfo: UserInfoService,
+    private activatedRoute: ActivatedRoute
   ){}
 
   ngOnInit(){
-    if(window.localStorage){
-
+    if(this.userInfo.data.u_id){
+      this.router.navigate(['room'],{relativeTo: this.activatedRoute})
     }
-    else {
-
+    else{
+      this.router.navigate(['login'],{relativeTo: this.activatedRoute})
     }
-
-
-
   }
 }

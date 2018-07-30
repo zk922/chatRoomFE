@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {st} from '@angular/core/src/render3';
 
 @Component({
   selector: 'login',
@@ -6,5 +7,8 @@ import {Component} from '@angular/core';
   styleUrls: ['./login.scss']
 })
 export class LoginComponent {
+  public u_name: string = '';
+  constructor(){
 
+  }
 }

@@ -2,20 +2,21 @@
   <div class="row">
     <div class="col-10 col-md-5 col-lg-5  mx-auto">
       <h1>WebSocket聊天室</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <p class="lead">aaaa</p>
       <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <p>bbbbbbbb</p>
     </div>
     <div class="col-10 col-md-4 col-lg-3 mx-auto d-flex align-items-center">
       <div>
         <p>
           <!--<div class="col col-md-6 justify-content-start">-->
           <label for="nickname">请输入昵称:</label>
-          <input class="form-control" id="nickname" type="text" required/>
+          <input class="form-control" id="nickname" [ngClass]="{'is-invalid': u_name_fc.control.dirty && u_name_fc.control.invalid}" type="text" [(ngModel)]="u_name" required #u_name_fc="ngModel"/>
+          <span class="invalid-feedback" *ngIf="u_name_fc.control.dirty && u_name_fc.control.invalid">请输入昵称</span>
           <!--</div>-->
         </p>
         <p class="lead">
-          <input type="button" class="btn btn-primary" value="进入聊天室" role="button"/>
+          <input type="button" class="btn btn-primary" value="进入聊天室" role="button" [disabled]="u_name_fc.control.invalid"/>
         </p>
       </div>
     </div>
